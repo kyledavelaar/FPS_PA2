@@ -13,13 +13,6 @@ void UIKAnimInstance::NativeBeginPlay()
 {
 	Super::NativeBeginPlay();
 	Character = Cast<AFPS_PA2Character>(TryGetPawnOwner());
-
-	if (Character) {
-		UE_LOG(LogTemp, Warning, TEXT("Valid Character"));
-	}
-	else {
-		UE_LOG(LogTemp, Warning, TEXT("Invalid Character"));
-	}
 }
 
 void UIKAnimInstance::NativeUpdateAnimation(float DeltaSeconds)
