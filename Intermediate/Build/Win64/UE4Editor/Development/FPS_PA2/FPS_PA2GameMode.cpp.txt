@@ -1,0 +1,22 @@
+C:\Users\kyled\Documents\Unreal Projects\FPS_PA2.6\Intermediate\Build\Win64\UE4Editor\Development\FPS_PA2\Definitions.FPS_PA2.h
+C:\Users\kyled\Documents\Unreal Projects\FPS_PA2.6\Source\FPS_PA2\FPS_PA2GameMode.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Classes\GameFramework/GameModeBase.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Classes\Engine/ServerStatReplicator.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\ServerStatReplicator.generated.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\GameModeBase.generated.h
+C:\Users\kyled\Documents\Unreal Projects\FPS_PA2.6\Intermediate\Build\Win64\UE4Editor\Inc\FPS_PA2\FPS_PA2GameMode.generated.h
+C:\Users\kyled\Documents\Unreal Projects\FPS_PA2.6\Source\FPS_PA2\FPS_PA2HUD.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Classes\GameFramework/HUD.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Classes\GameFramework/HUDHitBox.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Classes\GameFramework/DebugTextInfo.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\DebugTextInfo.generated.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\HUD.generated.h
+C:\Users\kyled\Documents\Unreal Projects\FPS_PA2.6\Intermediate\Build\Win64\UE4Editor\Inc\FPS_PA2\FPS_PA2HUD.generated.h
+C:\Users\kyled\Documents\Unreal Projects\FPS_PA2.6\Source\FPS_PA2\FPS_PA2Character.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Classes\GameFramework/Character.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Classes\GameFramework/CharacterMovementReplication.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\CharacterMovementReplication.generated.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Classes\GameFramework/RootMotionSource.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\RootMotionSource.generated.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\Character.generated.h
+C:\Users\kyled\Documents\Unreal Projects\FPS_PA2.6\Intermediate\Build\Win64\UE4Editor\Inc\FPS_PA2\FPS_PA2Character.generated.h

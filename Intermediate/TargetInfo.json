@@ -1,0 +1,14 @@
+{
+	"Targets": [
+		{
+			"Name": "FPS_PA2",
+			"Path": "C:\\Users\\kyled\\Documents\\Unreal Projects\\FPS_PA2.6\\Source\\FPS_PA2.Target.cs",
+			"Type": "Game"
+		},
+		{
+			"Name": "FPS_PA2Editor",
+			"Path": "C:\\Users\\kyled\\Documents\\Unreal Projects\\FPS_PA2.6\\Source\\FPS_PA2Editor.Target.cs",
+			"Type": "Editor"
+		}
+	]
+}

@@ -1,0 +1,2 @@
+C:\Users\kyled\Documents\Unreal Projects\FPS_PA2.6\Intermediate\Build\Win64\UE4Editor\Development\FPS_PA2\Definitions.FPS_PA2.h
+C:\Users\kyled\Documents\Unreal Projects\FPS_PA2.6\Source\FPS_PA2\FPS_PA2.h

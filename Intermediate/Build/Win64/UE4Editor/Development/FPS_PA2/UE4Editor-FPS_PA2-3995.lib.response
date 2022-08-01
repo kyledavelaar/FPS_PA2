@@ -1,0 +1,21 @@
+/NOLOGO
+/errorReport:prompt
+/MACHINE:x64
+/SUBSYSTEM:WINDOWS
+/DEF
+/NAME:"UE4Editor-FPS_PA2-3995.dll"
+/IGNORE:4221
+/NODEFAULTLIB
+"C:\Users\kyled\Documents\Unreal Projects\FPS_PA2\Intermediate\Build\Win64\FPS_PA2Editor\Development\Engine\SharedPCH.Engine.ShadowErrors.h.obj"
+"C:\Users\kyled\Documents\Unreal Projects\FPS_PA2\Intermediate\Build\Win64\UE4Editor\Development\FPS_PA2\FPS_PA2.cpp.obj"
+"C:\Users\kyled\Documents\Unreal Projects\FPS_PA2\Intermediate\Build\Win64\UE4Editor\Development\FPS_PA2\FPS_PA2Character.cpp.obj"
+"C:\Users\kyled\Documents\Unreal Projects\FPS_PA2\Intermediate\Build\Win64\UE4Editor\Development\FPS_PA2\FPS_PA2GameMode.cpp.obj"
+"C:\Users\kyled\Documents\Unreal Projects\FPS_PA2\Intermediate\Build\Win64\UE4Editor\Development\FPS_PA2\FPS_PA2HUD.cpp.obj"
+"C:\Users\kyled\Documents\Unreal Projects\FPS_PA2\Intermediate\Build\Win64\UE4Editor\Development\FPS_PA2\FPS_PA2Projectile.cpp.obj"
+"C:\Users\kyled\Documents\Unreal Projects\FPS_PA2\Intermediate\Build\Win64\UE4Editor\Development\FPS_PA2\FPS_PA2.init.gen.cpp.obj"
+"C:\Users\kyled\Documents\Unreal Projects\FPS_PA2\Intermediate\Build\Win64\UE4Editor\Development\FPS_PA2\FPS_PA2Character.gen.cpp.obj"
+"C:\Users\kyled\Documents\Unreal Projects\FPS_PA2\Intermediate\Build\Win64\UE4Editor\Development\FPS_PA2\FPS_PA2GameMode.gen.cpp.obj"
+"C:\Users\kyled\Documents\Unreal Projects\FPS_PA2\Intermediate\Build\Win64\UE4Editor\Development\FPS_PA2\FPS_PA2HUD.gen.cpp.obj"
+"C:\Users\kyled\Documents\Unreal Projects\FPS_PA2\Intermediate\Build\Win64\UE4Editor\Development\FPS_PA2\FPS_PA2Projectile.gen.cpp.obj"
+"C:\Users\kyled\Documents\Unreal Projects\FPS_PA2\Intermediate\Build\Win64\UE4Editor\Development\FPS_PA2\Default.rc2.res"
+/OUT:"C:\Users\kyled\Documents\Unreal Projects\FPS_PA2\Intermediate\Build\Win64\UE4Editor\Development\FPS_PA2\UE4Editor-FPS_PA2-3995.lib"

@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <None Include="..\..\FPS_PA2.uproject" />
+    <Filter Include="Source">
+      <UniqueIdentifier>{1DD9F1B1-D1A9-4CF9-A9E2-8132F2C9476B}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Source\FPS_PA2.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <None Include="..\..\Source\FPS_PA2Editor.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <Filter Include="Config">
+      <UniqueIdentifier>{E7544F99-3F40-4C1D-8418-F04CDD15A234}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Config\DefaultEditor.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultEditorPerProjectUserSettings.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultEngine.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultGame.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultInput.ini">
+      <Filter>Config</Filter>
+    </None>
+    <Filter Include="Source\FPS_PA2">
+      <UniqueIdentifier>{2C6568DF-9F6B-41A0-B4D7-CA6127F95D46}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Source\FPS_PA2\FPS_PA2.Build.cs">
+      <Filter>Source\FPS_PA2</Filter>
+    </None>
+    <ClCompile Include="..\..\Source\FPS_PA2\FPS_PA2.cpp">
+      <Filter>Source\FPS_PA2</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\FPS_PA2\FPS_PA2.h">
+      <Filter>Source\FPS_PA2</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\FPS_PA2\FPS_PA2Character.cpp">
+      <Filter>Source\FPS_PA2</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\FPS_PA2\FPS_PA2Character.h">
+      <Filter>Source\FPS_PA2</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\FPS_PA2\FPS_PA2GameMode.cpp">
+      <Filter>Source\FPS_PA2</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\FPS_PA2\FPS_PA2GameMode.h">
+      <Filter>Source\FPS_PA2</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\FPS_PA2\FPS_PA2HUD.cpp">
+      <Filter>Source\FPS_PA2</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\FPS_PA2\FPS_PA2HUD.h">
+      <Filter>Source\FPS_PA2</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\FPS_PA2\FPS_PA2Projectile.cpp">
+      <Filter>Source\FPS_PA2</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\FPS_PA2\FPS_PA2Projectile.h">
+      <Filter>Source\FPS_PA2</Filter>
+    </ClInclude>
+    <Filter Include="Source\FPS_PA2\Private">
+      <UniqueIdentifier>{ACC035A5-4512-414B-A1B2-386569F39C70}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\FPS_PA2\Private\IKAnimInstance.cpp">
+      <Filter>Source\FPS_PA2\Private</Filter>
+    </ClCompile>
+    <Filter Include="Source\FPS_PA2\Public">
+      <UniqueIdentifier>{6D173A06-2152-41F4-AAAA-E202AD0C823B}</UniqueIdentifier>
+    </Filter>
+    <ClInclude Include="..\..\Source\FPS_PA2\Public\IKAnimInstance.h">
+      <Filter>Source\FPS_PA2\Public</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
