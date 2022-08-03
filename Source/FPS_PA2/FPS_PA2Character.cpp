@@ -2,15 +2,15 @@
 
 #include "FPS_PA2Character.h"
 #include "FPS_PA2Projectile.h"
-#include "Animation/AnimInstance.h"
+#include "IKAnimInstance.h"
+
 #include "Camera/CameraComponent.h"
 #include "Components/CapsuleComponent.h"
 #include "Components/InputComponent.h"
 #include "GameFramework/InputSettings.h"
-#include "HeadMountedDisplayFunctionLibrary.h"
 #include "Kismet/GameplayStatics.h"
-#include "MotionControllerComponent.h"
-#include "XRMotionControllerBase.h" // for FXRMotionControllerBase::RightHandSourceId
+#include "Net/UnrealNetwork.h"
+
 
 DEFINE_LOG_CATEGORY_STATIC(LogFPChar, Warning, All);
 
@@ -48,6 +48,9 @@ AFPS_PA2Character::AFPS_PA2Character()
 	FP_Gun->CastShadow = false;
 	// FP_Gun->SetupAttachment(Mesh1P, TEXT("GripPoint"));
 	FP_Gun->SetupAttachment(RootComponent);
+
+	bIsAiming = false;
+	OpticIndex = 0;
 }
 
 void AFPS_PA2Character::BeginPlay()
@@ -57,6 +60,9 @@ void AFPS_PA2Character::BeginPlay()
 
 	//Attach gun mesh component to Skeleton, doing it here because the skeleton is not yet created in the constructor
 	FP_Gun->AttachToComponent(Mesh1P, FAttachmentTransformRules(EAttachmentRule::SnapToTarget, true), TEXT("S_HandR"));
+
+	// use this to switch between 1st and 3rd person animations
+	TutAnimInstance = Cast<UIKAnimInstance>(GetMesh1P()->GetAnimInstance());
 }
 
 //////////////////////////////////////////////////////////////////////////
@@ -85,6 +91,112 @@ void AFPS_PA2Character::SetupPlayerInputComponent(class UInputComponent* PlayerI
 	PlayerInputComponent->BindAxis("TurnRate", this, &AFPS_PA2Character::TurnAtRate);
 	PlayerInputComponent->BindAxis("LookUp", this, &APawn::AddControllerPitchInput);
 	PlayerInputComponent->BindAxis("LookUpRate", this, &AFPS_PA2Character::LookUpAtRate);
+}
+
+void AFPS_PA2Character::GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const
+{
+	Super::GetLifetimeReplicatedProps(OutLifetimeProps);
+	// clients have their own bIsAiming so don't want server to pass bIsAiming to all clients, we just want them to see our aim animation
+	DOREPLIFETIME_CONDITION(AFPS_PA2Character, bIsAiming, COND_SkipOwner);
+	DOREPLIFETIME_CONDITION(AFPS_PA2Character, OpticIndex, COND_SkipOwner);
+}
+
+void AFPS_PA2Character::SetAiming(bool IsAiming)
+{
+	bIsAiming = IsAiming;
+	if (TutAnimInstance)
+	{
+		TutAnimInstance->SetAiming(bIsAiming);
+	}
+	if (!HasAuthority())
+	{
+		// should this be validate or implement?
+		//Server_SetAiming_Validate(IsAiming);
+		//Server_SetAiming_Implementation(IsAiming);
+		//Server_SetAiming(IsAiming);
+	}
+}
+
+void AFPS_PA2Character::OnRep_IsAiming()
+{
+	if (TutAnimInstance)
+	{
+		TutAnimInstance->SetAiming(bIsAiming);
+	}
+}
+
+//bool AFPS_PA2Character::Server_SetAiming_Validate(bool IsAiming)
+//{
+//	return true;
+//}
+
+//void AFPS_PA2Character::Server_SetAiming_Implementation(bool IsAiming)
+//{
+//	SetAiming(IsAiming);
+//}
+
+//void AFPS_PA2Character::Server_SetAiming(bool IsAiming)
+//{
+//	SetAiming(IsAiming);
+//}
+
+
+void AFPS_PA2Character::OnRep_OpticIndex()
+{
+	CurrentOptic = Optics[OpticIndex];
+	if (TutAnimInstance)
+	{
+		TutAnimInstance->CycledOptic();
+	}
+}
+
+//bool AFPS_PA2Character::OnRep_OpticIndex_Validate(uint8 NewIndex)
+//{
+//	return true;
+//}
+
+//void AFPS_PA2Character::OnRep_OpticIndex_Implementation(uint8 NewIndex)
+//{
+//	OpticIndex = NewIndex;
+//	OnRep_OpticIndex();
+//}
+
+
+void AFPS_PA2Character::CycleOptic()
+{
+	OpticIndex += 1;
+	// bounds checking
+	if (OpticIndex >= Optics.Num())
+	{
+		OpticIndex = 0;
+	}
+	CurrentOptic = Optics[OpticIndex];
+	if (TutAnimInstance)
+	{
+		TutAnimInstance->CycledOptic();
+	}
+	if (!HasAuthority())
+	{
+		//Server_OpticIndex(OpticIndex);
+	}
+}
+
+void AFPS_PA2Character::Reload()
+{
+	if (FireAnimation != nullptr)
+	{
+		// Get the animation object for the arms mesh
+		UAnimInstance* AnimInstance = Mesh1P->GetAnimInstance();
+		if (AnimInstance != nullptr)
+		{
+			AnimInstance->Montage_Play(FireAnimation, 1.f);
+			AnimInstance->Montage_JumpToSection(FName("Reload"));
+		}
+	}
+	if (TutAnimInstance)
+	{
+		TutAnimInstance->Reload();
+	}
 }
 
 void AFPS_PA2Character::OnFire()

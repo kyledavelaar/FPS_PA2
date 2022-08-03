@@ -1,8 +1,8 @@
 {
 	"SourceFiles": [
-		"C:\\Users\\kyled\\Documents\\Unreal Projects\\FPS_PA2.6\\Source\\FPS_PA2\\FPS_PA2.Build.cs",
-		"C:\\Users\\kyled\\Documents\\Unreal Projects\\FPS_PA2.6\\Source\\FPS_PA2.Target.cs",
-		"C:\\Users\\kyled\\Documents\\Unreal Projects\\FPS_PA2.6\\Source\\FPS_PA2Editor.Target.cs"
+		"C:\\Users\\kyled\\Documents\\Unreal Projects\\FPS_PA2.6 - Copy\\Source\\FPS_PA2\\FPS_PA2.Build.cs",
+		"C:\\Users\\kyled\\Documents\\Unreal Projects\\FPS_PA2.6 - Copy\\Source\\FPS_PA2.Target.cs",
+		"C:\\Users\\kyled\\Documents\\Unreal Projects\\FPS_PA2.6 - Copy\\Source\\FPS_PA2Editor.Target.cs"
 	],
 	"EngineVersion": "4.27.2"
 }

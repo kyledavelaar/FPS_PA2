@@ -13,10 +13,10 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #endif
 #define FPS_PA2_FPS_PA2GameMode_generated_h
 
-#define FPS_PA2_6_Source_FPS_PA2_FPS_PA2GameMode_h_12_SPARSE_DATA
-#define FPS_PA2_6_Source_FPS_PA2_FPS_PA2GameMode_h_12_RPC_WRAPPERS
-#define FPS_PA2_6_Source_FPS_PA2_FPS_PA2GameMode_h_12_RPC_WRAPPERS_NO_PURE_DECLS
-#define FPS_PA2_6_Source_FPS_PA2_FPS_PA2GameMode_h_12_INCLASS_NO_PURE_DECLS \
+#define FPS_PA2_6___Copy_Source_FPS_PA2_FPS_PA2GameMode_h_12_SPARSE_DATA
+#define FPS_PA2_6___Copy_Source_FPS_PA2_FPS_PA2GameMode_h_12_RPC_WRAPPERS
+#define FPS_PA2_6___Copy_Source_FPS_PA2_FPS_PA2GameMode_h_12_RPC_WRAPPERS_NO_PURE_DECLS
+#define FPS_PA2_6___Copy_Source_FPS_PA2_FPS_PA2GameMode_h_12_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesAFPS_PA2GameMode(); \
 	friend struct Z_Construct_UClass_AFPS_PA2GameMode_Statics; \
@@ -25,7 +25,7 @@ public: \
 	DECLARE_SERIALIZER(AFPS_PA2GameMode)
 
 
-#define FPS_PA2_6_Source_FPS_PA2_FPS_PA2GameMode_h_12_INCLASS \
+#define FPS_PA2_6___Copy_Source_FPS_PA2_FPS_PA2GameMode_h_12_INCLASS \
 private: \
 	static void StaticRegisterNativesAFPS_PA2GameMode(); \
 	friend struct Z_Construct_UClass_AFPS_PA2GameMode_Statics; \
@@ -34,7 +34,7 @@ public: \
 	DECLARE_SERIALIZER(AFPS_PA2GameMode)
 
 
-#define FPS_PA2_6_Source_FPS_PA2_FPS_PA2GameMode_h_12_STANDARD_CONSTRUCTORS \
+#define FPS_PA2_6___Copy_Source_FPS_PA2_FPS_PA2GameMode_h_12_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	FPS_PA2_API AFPS_PA2GameMode(const FObjectInitializer& ObjectInitializer); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(AFPS_PA2GameMode) \
@@ -47,7 +47,7 @@ private: \
 public:
 
 
-#define FPS_PA2_6_Source_FPS_PA2_FPS_PA2GameMode_h_12_ENHANCED_CONSTRUCTORS \
+#define FPS_PA2_6___Copy_Source_FPS_PA2_FPS_PA2GameMode_h_12_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	FPS_PA2_API AFPS_PA2GameMode(AFPS_PA2GameMode&&); \
@@ -58,28 +58,28 @@ public: \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(AFPS_PA2GameMode)
 
 
-#define FPS_PA2_6_Source_FPS_PA2_FPS_PA2GameMode_h_12_PRIVATE_PROPERTY_OFFSET
-#define FPS_PA2_6_Source_FPS_PA2_FPS_PA2GameMode_h_9_PROLOG
-#define FPS_PA2_6_Source_FPS_PA2_FPS_PA2GameMode_h_12_GENERATED_BODY_LEGACY \
+#define FPS_PA2_6___Copy_Source_FPS_PA2_FPS_PA2GameMode_h_12_PRIVATE_PROPERTY_OFFSET
+#define FPS_PA2_6___Copy_Source_FPS_PA2_FPS_PA2GameMode_h_9_PROLOG
+#define FPS_PA2_6___Copy_Source_FPS_PA2_FPS_PA2GameMode_h_12_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FPS_PA2_6_Source_FPS_PA2_FPS_PA2GameMode_h_12_PRIVATE_PROPERTY_OFFSET \
-	FPS_PA2_6_Source_FPS_PA2_FPS_PA2GameMode_h_12_SPARSE_DATA \
-	FPS_PA2_6_Source_FPS_PA2_FPS_PA2GameMode_h_12_RPC_WRAPPERS \
-	FPS_PA2_6_Source_FPS_PA2_FPS_PA2GameMode_h_12_INCLASS \
-	FPS_PA2_6_Source_FPS_PA2_FPS_PA2GameMode_h_12_STANDARD_CONSTRUCTORS \
+	FPS_PA2_6___Copy_Source_FPS_PA2_FPS_PA2GameMode_h_12_PRIVATE_PROPERTY_OFFSET \
+	FPS_PA2_6___Copy_Source_FPS_PA2_FPS_PA2GameMode_h_12_SPARSE_DATA \
+	FPS_PA2_6___Copy_Source_FPS_PA2_FPS_PA2GameMode_h_12_RPC_WRAPPERS \
+	FPS_PA2_6___Copy_Source_FPS_PA2_FPS_PA2GameMode_h_12_INCLASS \
+	FPS_PA2_6___Copy_Source_FPS_PA2_FPS_PA2GameMode_h_12_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define FPS_PA2_6_Source_FPS_PA2_FPS_PA2GameMode_h_12_GENERATED_BODY \
+#define FPS_PA2_6___Copy_Source_FPS_PA2_FPS_PA2GameMode_h_12_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FPS_PA2_6_Source_FPS_PA2_FPS_PA2GameMode_h_12_PRIVATE_PROPERTY_OFFSET \
-	FPS_PA2_6_Source_FPS_PA2_FPS_PA2GameMode_h_12_SPARSE_DATA \
-	FPS_PA2_6_Source_FPS_PA2_FPS_PA2GameMode_h_12_RPC_WRAPPERS_NO_PURE_DECLS \
-	FPS_PA2_6_Source_FPS_PA2_FPS_PA2GameMode_h_12_INCLASS_NO_PURE_DECLS \
-	FPS_PA2_6_Source_FPS_PA2_FPS_PA2GameMode_h_12_ENHANCED_CONSTRUCTORS \
+	FPS_PA2_6___Copy_Source_FPS_PA2_FPS_PA2GameMode_h_12_PRIVATE_PROPERTY_OFFSET \
+	FPS_PA2_6___Copy_Source_FPS_PA2_FPS_PA2GameMode_h_12_SPARSE_DATA \
+	FPS_PA2_6___Copy_Source_FPS_PA2_FPS_PA2GameMode_h_12_RPC_WRAPPERS_NO_PURE_DECLS \
+	FPS_PA2_6___Copy_Source_FPS_PA2_FPS_PA2GameMode_h_12_INCLASS_NO_PURE_DECLS \
+	FPS_PA2_6___Copy_Source_FPS_PA2_FPS_PA2GameMode_h_12_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
@@ -87,7 +87,7 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 template<> FPS_PA2_API UClass* StaticClass<class AFPS_PA2GameMode>();
 
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID FPS_PA2_6_Source_FPS_PA2_FPS_PA2GameMode_h
+#define CURRENT_FILE_ID FPS_PA2_6___Copy_Source_FPS_PA2_FPS_PA2GameMode_h
 
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
